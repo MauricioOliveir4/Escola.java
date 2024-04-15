@@ -3,10 +3,10 @@ import java.util.ArrayList;
 public class Escola {
     private String nomeEscola;
     private String endereco;
-    private String diretor;
+    private Pessoa diretor;
     private ArrayList<Curso> cursos;
 
-    public Escola(String nomeEscola, String endereco, String diretor) {
+    public Escola(String nomeEscola, String endereco, Pessoa diretor) {
         this.nomeEscola = nomeEscola;
         this.endereco = endereco;
         this.diretor = diretor;
@@ -48,11 +48,11 @@ public class Escola {
         this.endereco = endereco;
     }
 
-    public String getDiretor() {
+    public Pessoa getDiretor() {
         return diretor;
     }
 
-    public void setDiretor(String diretor) {
+    public void setDiretor(Pessoa diretor) {
         this.diretor = diretor;
     }
 
